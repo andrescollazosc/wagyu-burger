@@ -22,6 +22,12 @@
     font-weight: 300;
     color: $dark-gray-color;
   }
+
+  @media (max-width: 768px) {
+    &__place-title {
+      padding: 10px 0;
+    }
+  }
 }
 
 .text-menu {
@@ -39,6 +45,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .desc-container {
+    flex-direction: column;
+  }
+
   .desktop-menu {
     display: none;
   }
