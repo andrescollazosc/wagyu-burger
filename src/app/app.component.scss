@@ -1,13 +1,51 @@
+@import "../styles/colors";
+@import "../styles/typography";
 
-@media (max-width: 768px) {
-     .desktop-menu {
-        display: none;
-     }
+.desc-container {
+  background: #ebebeb;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+
+  &__place-title {
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: $dark-gray-color;
+    padding: 0 15px;
+  }
+
+  &__description {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: $dark-gray-color;
+  }
 }
 
+.text-menu {
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: $dark-gray-color;
+  margin: 20px 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.cards-container {
+   margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+}
 
 @media (min-width: 768px) {
-    .mobile-menu {
-       display: none;
-    }
+  .mobile-menu {
+    display: none;
+  }
 }

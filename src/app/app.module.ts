@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuMobileComponent } from './components/menu-mobile/menu-mobile.component';
+import { HeroNavbarComponent } from './components/hero-navbar/hero-navbar.component';
+import { CardMenuComponent } from './components/card-menu/card-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    MenuMobileComponent
+    MenuMobileComponent,
+    HeroNavbarComponent,
+    CardMenuComponent
   ],
   imports: [
     BrowserModule,

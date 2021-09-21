@@ -1,0 +1,137 @@
+@import "../../../styles/typography";
+@import "../../../styles/colors";
+
+.container-hero {
+  min-height: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+}
+
+.container-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.menu-container {
+  width: 100%;
+  color: #fff;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.items-container {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  padding: 5px;
+  font-size: 28px;
+}
+
+.item a {
+  color: #fff;
+}
+
+.fa-facebook:hover {
+  color: $facebook-color;
+}
+
+.fa-instagram:hover {
+  color: $instagram-color;
+}
+
+.fa-whatsapp:hover {
+  color: $whatsapp-color;
+}
+
+.information-container {
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  color: #fff;
+  width: 500px;
+  font-family: Roboto, sans-serif;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.text-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.information {
+  font-size: 18px;
+  font-weight: 100;
+  margin: 20px 0 60px 0;
+}
+
+.info-button {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #d4a232;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.info-button:hover {
+  filter: brightness(120%);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .information-container {
+    width: 400px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .menu-container {
+    padding: 50px 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .information-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .desktop-menu {
+    display: block;
+  }
+}
