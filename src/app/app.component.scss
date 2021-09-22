@@ -1,6 +1,26 @@
 @import "../styles/colors";
 @import "../styles/typography";
 
+.main-container {
+  position: relative;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  font-size: 50px;
+}
+
+.fa-whatsapp-square {
+  color: $whatsapp-color;  
+  transition: all .5s;
+}
+
+.fa-whatsapp-square:hover {
+  filter: brightness(110%);
+}
+
 .desc-container {
   background: #ebebeb;
   width: 100%;
@@ -52,6 +72,11 @@
 
   .desktop-menu {
     display: none;
+  }
+
+  .whatsapp-icon {
+    right: 10px;
+    bottom: 20px;
   }
 }
 

@@ -2,7 +2,7 @@
 <!-- <app-menu-mobile class="mobile-menu"></app-menu-mobile> -->
 <app-hero-navbar></app-hero-navbar>
 
-<div class="container mt-5 mb-5">
+<div class="container mt-5 mb-5 main-container">
   <div class="desc-container">
     <div class="desc-container__place-title">Popayàn</div>
 
@@ -17,9 +17,14 @@
   <div class="text-menu">nuestro menu</div>
 
   <div class="row cards-container">
-    <app-card-menu *ngFor="let cardMenu of cardMenuConfig"
+    <app-card-menu
+      *ngFor="let cardMenu of cardMenuConfig"
       [cardMenuConfig]="cardMenu"
       class="col-12 col-md-4"
     ></app-card-menu>
   </div>
+
+  <a href="https://api.whatsapp.com/send/?phone=573008201530" class="whatsapp-icon" target="_blank">
+    <i class="fab fa-whatsapp-square"></i>
+  </a>
 </div>
