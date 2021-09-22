@@ -14,15 +14,12 @@
     </div>
   </div>
 
-
-  <div class="text-menu">
-      nuestro menu
-  </div>
+  <div class="text-menu">nuestro menu</div>
 
   <div class="row cards-container">
-    <app-card-menu class="col-12 col-md-4"></app-card-menu>
-    <app-card-menu class="col-12 col-md-4"></app-card-menu>
-    <app-card-menu class="col-12 col-md-4"></app-card-menu>
+    <app-card-menu *ngFor="let cardMenu of cardMenuConfig"
+      [cardMenuConfig]="cardMenu"
+      class="col-12 col-md-4"
+    ></app-card-menu>
   </div>
-
 </div>

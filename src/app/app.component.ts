@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MenuDataMock } from './mocks/menu-data.mock';
+import { MenuDataModel } from './models/menu-data.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'wagyu-burguers';
+
+  public cardMenuConfig: MenuDataModel[] = MenuDataMock.getMenu();
+
 }

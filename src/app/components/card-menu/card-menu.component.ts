@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { MenuDataModel } from 'src/app/models/menu-data.model';
 
 @Component({
   selector: 'app-card-menu',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardMenuComponent implements OnInit {
 
-  constructor() { }
+  @Input() cardMenuConfig: MenuDataModel = {};
 
   ngOnInit(): void {
   }

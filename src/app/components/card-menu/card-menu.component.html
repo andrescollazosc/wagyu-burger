@@ -4,10 +4,18 @@
   </div>
 
   <div class="card-container__text-container">
-    <div class="card-container__title">Hamburguesa especial</div>
+    <div class="card-container__title">{{ cardMenuConfig.productName }}</div>
 
     <div class="card-container__description">
-      Hamburguesa con las mejores carnes bla bla...
+      {{ cardMenuConfig.description }}
     </div>
+
+    <div class="card-container__price-container">
+      <span class="card-container__price">
+        {{ cardMenuConfig.price }}
+      </span>      
+    </div>
+
+
   </div>
 </div>
