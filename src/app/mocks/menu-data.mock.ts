@@ -13,7 +13,7 @@ export class MenuDataMock {
             cebolla caramelizada, salsa de la casa,
             tocineta, lámina de oro comestible.`,
         price: '$35.000',
-        image: ''
+        image: 'assets/img/gold-burguer.jpeg'
       },
       {
         productName: 'wagyu burger doble',
@@ -22,7 +22,7 @@ export class MenuDataMock {
         cebolla caramelizada, salsa de la casa,
         tocineta.`,
         price: '$25.000',
-        image: ''
+        image: 'assets/img/doble-burger.jpeg'
       },
       {
         productName: 'wagyu burger tocineta',
@@ -30,7 +30,7 @@ export class MenuDataMock {
         extra queso ó queso cheddar, cebolla
         caramelizada, salsa de la casa, tocineta.`,
         price: '$20.000',
-        image: ''
+        image: 'assets/img/tocineta-burger.jpeg'
       },
       {
         productName: 'wagyu burger sencilla',
@@ -38,7 +38,7 @@ export class MenuDataMock {
         extra queso ó queso cheddar, cebolla
         caramelizada, salsa de la casa.`,
         price: '$18.000',
-        image: ''
+        image: 'assets/img/sencilla-burguer.jpeg'
       },
       {
         productName: 'wagyu gold dog',
@@ -47,7 +47,7 @@ export class MenuDataMock {
         triturada, tocineta, lámina de oro
         comestible.`,
         price: '$35.000',
-        image: ''
+        image: 'assets/img/gold-dog.jpeg'
       },
       {
         productName: 'wagyu dog tocineta',
@@ -55,7 +55,7 @@ export class MenuDataMock {
         extra queso, cebolla caramelizada, papa
         triturada, tocineta.`,
         price: '$20.000',
-        image: ''
+        image: 'assets/img/tocineta-dog.jpeg'
       },
       {
         productName: 'wagyu dog sencillo',
@@ -63,7 +63,7 @@ export class MenuDataMock {
         extra queso, cebolla caramelizada, papa
         triturada.`,
         price: '$18.000',
-        image: ''
+        image: 'assets/img/sencillo-dog.jpeg'
       }
     ];
   }
