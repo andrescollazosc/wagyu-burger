@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroNavbarComponent implements OnInit {
 
-  constructor() { }
-
+  public isOpen: boolean = false;
+  public menuMobileCssClass: string = "fas fa-bars social-media-logo";
+  
   ngOnInit(): void {
   }
 
+  public openClose():void{
+    this.isOpen = !this.isOpen;
+    this.menuMobileCssClass = this.isOpen ? "fas fa-times social-media-logo" : "fas fa-bars social-media-logo"
+  }
 }

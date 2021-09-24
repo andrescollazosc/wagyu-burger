@@ -20,21 +20,32 @@
             <i class="fab fa-instagram social-media-logo"></i>
           </a>
         </li>
-        <li class="item" title="Whatsapp">
-          <a
-            href="https://api.whatsapp.com/send/?phone=573008201530"
-            target="_blank"
-          >
-            <i class="fab fa-whatsapp social-media-logo"></i>
-          </a>
-        </li>
       </ul>
     </div>
 
-    <div class="item mobile-menu">
-      <a href="">
-        <i class="fas fa-bars social-media-logo"></i>
-      </a>
+    <div class="item mobile-menu" (click)="openClose()">
+      <div>
+        <i [class]="menuMobileCssClass"></i>
+      </div>
+    </div>
+
+    <div *ngIf="isOpen" class="panel-mobile-menu">
+      <ul class="mobile-menu-list">
+        <li>
+          <a
+          href="https://www.facebook.com/profile.php?id=100069312506665"
+          target="_blank"
+          title="Facebook"
+        >
+          <i class="fab fa-facebook social-media-logo"></i>Facebook
+        </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fab fa-instagram social-media-logo"></i>Instagram
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 
