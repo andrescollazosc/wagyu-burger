@@ -104,6 +104,29 @@
   display: none;
 }
 
+.panel-mobile-menu{
+  position: absolute;
+  right: 15px;
+  top: 95px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.mobile-menu-list{
+  list-style: none;
+  padding: 10px;
+}
+
+.mobile-menu-list li a{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mobile-menu-list li a i{
+  padding-right: 5px;
+}
+
 @media (max-width: 768px) {
   .information-container {
     width: 400px;
@@ -121,6 +144,7 @@
 @media (max-width: 575px) {
   .menu-container {
     padding: 50px 10px;
+    position: relative;
   }
 }
 
